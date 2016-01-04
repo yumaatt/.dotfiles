@@ -1,0 +1,4 @@
+(:name el-get-lock
+       :description "el-get-lock"
+       :type github
+       :pkgname "tarao/el-get-lock.el")
