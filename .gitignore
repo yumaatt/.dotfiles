@@ -1,0 +1,27 @@
+### emacs
+*~
+\#*\#
+.\#*
+*.elc
+.emacs.desktop
+.emacs.desktop.lock
+.autosave
+auto-save-list
+anything-c-adaptive-history
+ac-comphist.dat
+undohist
+.backup
+url/cookies
+tramp
+shellenv.el
+.bm-repository
+.emacs.d/elisp/el-get/*
+!.emacs.d/elisp/el-get/.gitkeep
+.emacs.d/elisp/elpa/*
+!.emacs.d/elisp/elpa/.gitkeep
+.recentf
+.mc-lists.el
+.cask
+
+### vim
+*.swp
