@@ -1,5 +1,8 @@
 (setq el-get-lock-package-versions
-      '((haskell-mode :checksum "fae18756f53ef2f7ff135b6bc746e100a5fdc2dd")
+      '((esup :checksum "fc061f30c5c68a4104333b65a55c51589a89f231")
+        (magit :checksum "07b20fac959108f113390c25192c633fe86b0efa")
+        (git-commit-mode :checksum "0bcbffd05ffa82fa788e0c8e63c03dd072f42bf9")
+        (haskell-mode :checksum "fae18756f53ef2f7ff135b6bc746e100a5fdc2dd")
         (clojure-mode :checksum "f825d6a2afdd22a09299ab9dfaab0080b2e15969")
         (markdown-mode :checksum "1b21b1fa333d9384942aa74b0ad0fea8c701dee3")
         (yascroll :checksum "f7743df1cf6d8e55607141d1ea5f50b562582c51")

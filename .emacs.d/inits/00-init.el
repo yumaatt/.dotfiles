@@ -35,7 +35,9 @@
 (column-number-mode t)
 
 ;; 行数を表示する
-(global-linum-mode t)
+(require 'linum)
+(global-linum-mode t)      ; デフォルトで linum-mode を有効にする
+;(setq linum-format "%3d ") ; 3 桁分の領域を確保して行番号のあとにスペースを入れる
 
 ;; カーソルの点滅をやめる
 (blink-cursor-mode 0)
