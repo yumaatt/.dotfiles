@@ -76,7 +76,7 @@
 ;;(pc-selection-mode 1)
 
 ;; C-kで行全体を削除する
-(setq kill-whole-line t)
+(global-set-key (kbd "C-k") 'kill-whole-line)
 
 ;; "yes or no" の選択を "y or n" にする
 (fset 'yes-or-no-p 'y-or-n-p)

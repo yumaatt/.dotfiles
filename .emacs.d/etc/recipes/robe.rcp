@@ -1,0 +1,4 @@
+(:name robe
+       :description "robe"
+       :type github
+       :pkgname "dgutov/robe.el")
