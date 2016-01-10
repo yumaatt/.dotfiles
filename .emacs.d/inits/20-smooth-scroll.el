@@ -1,2 +1,2 @@
-(require 'smooth-scroll)
-(smooth-scroll-mode t)
+;(require 'smooth-scroll)
+;(smooth-scroll-mode t)

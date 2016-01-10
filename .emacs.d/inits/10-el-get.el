@@ -67,7 +67,7 @@
 ;; ruby
 (el-get-bundle rubocop)
 (el-get-bundle ruby-block)
-(el-get-bundle ruby-end)
+;(el-get-bundle ruby-end)
 (el-get-bundle rbenv)
 (el-get-bundle inf-ruby)
 (el-get-bundle dgutov/robe)

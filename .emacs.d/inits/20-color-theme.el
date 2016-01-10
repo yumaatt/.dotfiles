@@ -1,4 +1,4 @@
-(require 'color-theme)
-(color-theme-initialize)
+;(require 'color-theme)
+;(color-theme-initialize)
 
 ;(load-theme 'adwaita t)
