@@ -1,0 +1,17 @@
+#!/bin/sh
+cd "${0%/*}" && exec > .gitignore
+gibo Linux
+gibo Emacs
+gibo Vim
+cat <<'EOF'
+### custom
+
+# emacs
+.emacs.d/elisp/el-get/*
+!.emacs.d/elisp/el-get/.gitkeep
+.emacs.d/elisp/elpa/*
+!.emacs.d/elisp/elpa/.gitkeep
+undohist
+.recentf
+ac-comphist.dat
+EOF
