@@ -1,4 +1,4 @@
-### https://raw.github.com/github/gitignore/f51f0baa5a721f0af6fbf0ae377ecd86c6eaa3b4/Global/Linux.gitignore
+### https://raw.github.com/github/gitignore/4215c0f78cf6ac52f3b943b7b0904cfc470d032e/Global/Linux.gitignore
 
 *~
 
@@ -12,7 +12,7 @@
 .Trash-*
 
 
-### https://raw.github.com/github/gitignore/f51f0baa5a721f0af6fbf0ae377ecd86c6eaa3b4/Global/Emacs.gitignore
+### https://raw.github.com/github/gitignore/4215c0f78cf6ac52f3b943b7b0904cfc470d032e/Global/Emacs.gitignore
 
 # -*- mode: gitignore; -*-
 *~
@@ -48,7 +48,7 @@ tramp
 .cask/
 
 
-### https://raw.github.com/github/gitignore/f51f0baa5a721f0af6fbf0ae377ecd86c6eaa3b4/Global/Vim.gitignore
+### https://raw.github.com/github/gitignore/4215c0f78cf6ac52f3b943b7b0904cfc470d032e/Global/Vim.gitignore
 
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
@@ -68,3 +68,6 @@ Session.vim
 undohist
 .recentf
 ac-comphist.dat
+
+# git
+.gitconfig.local

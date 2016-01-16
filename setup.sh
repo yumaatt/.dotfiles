@@ -8,8 +8,14 @@ for dotfile in .?*; do
             continue;;
         .git)
             continue;;
+        .gitconfig.local)
+            continue;;
+        .gitignore_gen)
+            continue;;
         *)
             ln -Fis "${PWD}/${dotfile}" $HOME
             ;;
     esac
 done
+
+cp .gitconfig.local ~/
