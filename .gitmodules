@@ -4,3 +4,6 @@
 [submodule "modules/dircolors-solarized"]
 	path = modules/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "modules/neobundle.vim"]
+	path = modules/neobundle.vim
+	url = https://github.com/Shougo/neobundle.vim.git
