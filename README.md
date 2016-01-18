@@ -1,17 +1,13 @@
 # dotfiles
 
+- git
+- zsh
+- vim
 - emacs
+- tmux
+- screen
 
 # how to use
 
-    $ git clone git://github.com/yumaatt/.dotfiles.git ~/.dotfiles
-    $ ./.dotfiles/setup.sh
-
-# todo
-
-- git
-- zsh
-- tmux
-- screen
-- vim
-- peco
+    $ git clone https://github.com/yumaatt/.dotfiles.git /path/to/.dotfiles
+    $ /path/to/.dotfiles/setup.sh
