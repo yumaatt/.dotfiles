@@ -6,6 +6,7 @@
 - emacs
 - tmux
 - screen
+- test
 
 # how to use
 
