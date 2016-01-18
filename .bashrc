@@ -173,8 +173,8 @@ if [ "$PLATFORM" = "linux" ]; then
 else
     ### git-prompt
     __git_ps1() { :; }
-    if [ -f ~/.modules/git-prompt.sh ]; then
-        source ~/.modules/git-prompt.sh
+    if [ -f ~/.dotfiles/modules/git-prompt.sh ]; then
+        source ~/.dotfiles/modules/git-prompt.sh
     fi
     my__git_ps1() { is_git_repo && echo -e "${Red}$(__git_ps1)${NC}" || :; }
     PROMPT_COMMAND="my__git_ps1;$PROMPT_COMMAND"
