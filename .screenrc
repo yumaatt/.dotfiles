@@ -1,0 +1,12 @@
+hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y %m/%d %C%a "
+hardstatus off
+escape ^t^t
+scrollback 4000
+termcapinfo xterm* ti@:te@
+bind x
+bind ^x
+autodetach on
+bind r source ~/.screenrc
+startup_message off
+bindkey "^H" prev
+bindkey "^L" next
