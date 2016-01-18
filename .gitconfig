@@ -8,7 +8,6 @@
 
 [include]
   path = ~/.gitconfig.local
-  path = ~/.gitconfig.private
 
 #[user]
 #  name  = xxx
@@ -49,10 +48,10 @@
 #  whitespace = fix
 
 #[commit]
-#  template = ~/.gitfiles/COMMIT_EDITMSG
+#  template = ~/.dotfiles/.gitfiles/COMMIT_EDITMSG
 
 #[init]
-#  templatedir = ~/.gitfiles/templates/
+#  templatedir = ~/.dotfiles/.gitfiles/templates/
 
 [merge]
   tool = vimdiff
