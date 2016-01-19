@@ -27,6 +27,11 @@ alias duh="du -h ./ --max-depth=1"
 # su
 alias su="su -l"
 
+# history
+unalias history
+alias h="history 1"
+alias hi="history -Di 1"
+
 # vim
 alias v='vim'
 alias 'src'='exec zsh'
