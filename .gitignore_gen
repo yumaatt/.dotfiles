@@ -14,4 +14,7 @@ cat <<'EOF'
 undohist
 .recentf
 ac-comphist.dat
+
+# vim
+.vim/bundle
 EOF

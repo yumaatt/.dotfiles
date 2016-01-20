@@ -69,5 +69,5 @@ undohist
 .recentf
 ac-comphist.dat
 
-# git
-.gitconfig.local
+# vim
+.vim/bundle
