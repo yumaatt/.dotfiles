@@ -12,10 +12,42 @@ for dotfile in .?*; do
             continue;;
         .gitignore_gen)
             continue;;
+        .gitfiles)
+            continue;;
+        .gitmodules)
+            continue;;
+        .ssh)
+            continue;;
+        .vim)
+            continue;;
+        .zsh)
+            continue;;
         *)
-            ln -Fis "${PWD}/${dotfile}" $HOME
+            #ln -Fis "${PWD}/${dotfile}" $HOME
+            ln -Fis "${HOME}/.dotfiles/${dotfile}" $HOME
             ;;
     esac
 done
 
-cp .gitconfig.local ~/
+if [ ! -f ~/.gitconfig.local ]; then
+    cp .gitconfig.local ~/
+    echo 'cp .gitconfig.local ~/'
+fi
+
+ln -Fis "${PWD}/bin" $HOME
+
+if [ ! -L ~/.oh-my-zsh ]; then
+    #ln -Fis "${PWD}/modules/oh-my-zsh" "$HOME/.oh-my-zsh"
+    ln -Fis "${HOME}/.dotfiles/modules/oh-my-zsh" "$HOME/.oh-my-zsh"
+fi
+
+if [ ! -L ~/.dotfiles ]; then
+    ln -Fis ${PWD} "$HOME/.dotfiles"
+fi
+
+echo 'please edit ~/.gitconfig.local'
+
+git submodule init
+git submodule update
+
+vim -c ':NeoBundleInstall' -c ':q!' -c ':q!'
