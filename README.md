@@ -2,13 +2,14 @@
 
 - git
 - zsh
+- bash
 - vim
 - emacs
 - tmux
 - screen
-- test
+- peco
 
 # how to use
 
-    $ git clone https://github.com/yumaatt/.dotfiles.git /path/to/.dotfiles
-    $ /path/to/.dotfiles/setup.sh
+    $ git clone https://github.com/yumaatt/dotfiles.git /path/to/dotfiles
+    $ /path/to/dotfiles/setup.sh
