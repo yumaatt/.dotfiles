@@ -1,0 +1,113 @@
+alias -g P='| peco'
+
+#alias ll='ls -la | peco'
+#alias tp='top | peco'
+alias pp='ps aux | peco'
+
+# search history
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(\history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
+# move current dir
+function peco-cdr () {
+    local selected_dir=$(cdr -l | awk '{ print $2 }' | peco)
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-cdr
+bindkey '^xr' peco-cdr
+
+# process kill
+function peco-kill-process () {
+    ps -ef | peco | awk '{ print $2 }' | xargs kill
+    zle clear-screen
+}
+zle -N peco-kill-process
+bindkey '^xk' peco-kill-process   # C-x k
+
+# select file
+function peco-path() {
+  local filepath="$(find . | grep -v '/\.' | peco --prompt 'PATH>')"
+  [ -z "$filepath" ] && return
+  if [ -n "$LBUFFER" ]; then
+    BUFFER="$LBUFFER$filepath"
+  else
+    if [ -d "$filepath" ]; then
+      BUFFER="cd $filepath"
+    elif [ -f "$filepath" ]; then
+      BUFFER="$EDITOR $filepath"
+    fi
+  fi
+  CURSOR=$#BUFFER
+}
+zle -N peco-path
+bindkey '^xf' peco-path
+
+# git grep した結果を絞り込んでエディタで開く
+#function peco-git-grep() {
+#  inside-git-work-tree || return
+#  [ -z "$LBUFFER" ] && return
+#  local peco="$(\git grep -n "$LBUFFER" | peco --prompt 'GIT GREP>' 2> /dev/null)"
+#  [ -z "$peco" ] && return
+#  local file="$(echo $peco | cut -d':' -f1)"
+#  local line="$(echo $peco | cut -d':' -f2)"
+#  BUFFER="$EDITOR $file +$line"
+#  CURSOR=$#BUFFER
+#}
+#zle -N peco-git-grep
+#bindkey '^g' peco-git-grep
+
+# peco
+function peco-src () {
+  local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-src
+bindkey '^xs' peco-src
+
+#function peco-git-checkout () {
+#  local branch=$(git branch -a | peco | tr -d ' ' | sed -e 's/\*//')
+#  if [ -n "$branch" ]; then
+#    if [[ "$branch" =~ "remotes/" ]]; then
+#      local b=$(echo $branch | awk -F'/' '{print $3}')
+#      BUFFER="git checkout -b ${b} ${branch}"
+#      zle accept-line
+#    else
+#      BUFFER="git checkout ${branch}"
+#      zle accept-line
+#    fi
+#  fi
+#}
+#zle -N peco-git-checkout
+#bindkey '^xb' peco-git-checkout
+
+#function peco-ssh() {
+#  local res
+#  res=$(grep "Host " ~/.ssh/config | cut -b 6- | peco)
+#  if [ -n "$res" ]; then
+#    BUFFER="ssh ${res}"
+#    zle end-of-line
+#  fi
+#}
+#zle -N peco-ssh
+#bindkey '^xh' peco-ssh

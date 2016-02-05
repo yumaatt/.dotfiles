@@ -670,8 +670,40 @@ function __rm_single_file(){
        fi
 }
 
+# cdr
+autoload -Uz is-at-least
+if is-at-least 4.3.11
+then
+  autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+  add-zsh-hook chpwd chpwd_recent_dirs
+  zstyle ':chpwd:*' recent-dirs-max 5000
+  zstyle ':chpwd:*' recent-dirs-default yes
+  zstyle ':completion:*' recent-dirs-insert both
+fi
+
+# anyenv
+if [ -d ${HOME}/.anyenv ] ; then
+    export PATH="$HOME/.anyenv/bin:$PATH"
+    eval "$(anyenv init -)"
+    for D in `ls $HOME/.anyenv/envs`
+    do
+        export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
+    done
+fi
+
+# evm
+export PATH="$HOME/.evm/bin:$PATH"
+
+# go
+#export GOPATH=$HOME
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
+
 ## alias設定
 [ -f ~/.dotfiles/.zsh/.zshrc.alias ] && source ~/.dotfiles/.zsh/.zshrc.alias
+
+## peco設定
+[ -f ~/.dotfiles/.zsh/.zshrc.peco ] && source ~/.dotfiles/.zsh/.zshrc.peco
 
 case "${OSTYPE}" in
 # MacOSX
@@ -685,10 +717,6 @@ linux*)
     [ -f ~/.dotfiles/.zsh/.zshrc.linux ] && source ~/.dotfiles/.zsh/.zshrc.linux
     ;;
 esac
-
-# ~/.zshrc
-# setting for percol
-# source ~/.zsh/percol.zsh
 
 ## local固有設定
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local

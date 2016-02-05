@@ -71,3 +71,4 @@ ac-comphist.dat
 
 # vim
 .vim/bundle
+private_vars

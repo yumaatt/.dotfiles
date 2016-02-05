@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((smart-newline :checksum "f5f5ff033645aea0652aa375b034746754a38b1e")
+      '((flycheck :checksum "f2207c1ec455d75bd06458cf0f6af3b3b40c7ad7")
+        (smart-newline :checksum "f5f5ff033645aea0652aa375b034746754a38b1e")
         (robe :checksum "af3d1a8deb7f1531b95112b955fce91d5f5d1ea6")
         (inf-ruby :checksum "24c08fca2a18b76a3a200c79bdb5e41b50e04296")
         (rbenv :checksum "2ea1a5bdc1266caef1dd77700f2c8f42429b03f1")
@@ -60,7 +61,7 @@
         (js2-mode :checksum "ae922a3bd6280c08cad858dcd85a6f0b4a63aa45")
         (go-mode :checksum "dccb56c1b1b85c3d7b3184a6606024077d4e1775")
         (coffee-mode :checksum "224467585cc83a15b087b9745b57044f3af2bba0")
-        (dired+ :checksum "12c98041ea90ba0ab6c077724eef0d1f3de5f16d")
+        (dired+ :checksum "7b9813f79e86d2e4f36eea74a86ce83f5336fdc6")
         (undo-tree :checksum "a3e81b682053a81e082139300ef0a913a7a610a2")
         (zlc :checksum "4dd2ba267ecdeac845a7cbb3147294ee7daa25f4")
         (recentf-ext :checksum "495bfe07e8a759f1e6dfbd45e62ae2f72404ff79")
