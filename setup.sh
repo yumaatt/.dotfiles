@@ -45,9 +45,13 @@ if [ ! -L ~/.dotfiles ]; then
     ln -Fis ${PWD} "$HOME/.dotfiles"
 fi
 
-echo 'please edit ~/.gitconfig.local'
+if [ ! -L ~/.dotfiles/.vim/bundle/neobundle.vim ]; then
+    ln -Fis "$HOME/.dotfiles/modules/neobundle.vim" "$HOME/.dotfiles/.vim/bundle/neobundle.vim"
+fi
 
 git submodule init
 git submodule update
 
 vim -c ':NeoBundleInstall' -c ':q!' -c ':q!'
+
+echo 'please edit ~/.gitconfig.local'

@@ -16,5 +16,6 @@ undohist
 ac-comphist.dat
 
 # vim
-.vim/bundle
+.vim/bundle/*
+!.vim/bundle/.gitkeep
 EOF

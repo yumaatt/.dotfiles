@@ -70,5 +70,5 @@ undohist
 ac-comphist.dat
 
 # vim
-.vim/bundle
-private_vars
+.vim/bundle/*
+!.vim/bundle/.gitkeep
