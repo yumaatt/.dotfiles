@@ -44,16 +44,6 @@ alias nvim='vim -N -u NONE -i NONE'
 alias e='emacs -l ~/.emacs.d/init.el'
 alias eq='emacs -q'
 
-# rbenv
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
-
-# evm
-#export PATH="$HOME/.evm/bin:$PATH"
-
-# Added by the Heroku Toolbelt
-#export PATH="/usr/local/heroku/bin:$PATH"
-
 # rails
 alias -g RET="RAILS_ENV=test"
 alias -g RED="RAILS_ENV=development"

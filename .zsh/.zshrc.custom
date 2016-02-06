@@ -158,10 +158,10 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 
 # コマンドのスペルチェックをする
-setopt correct
+#setopt correct
 
 # コマンドライン全てのスペルチェックをする
-setopt correct_all
+#setopt correct_all
 
 # 上書きリダイレクトの禁止
 setopt no_clobber
@@ -490,8 +490,8 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 export EDITOR=vim
 export PATH=$PATH:$HOME/local/bin:/usr/local/git/bin
-#export PATH=$PATH:$HOME/dotfiles/bin
 export PATH=$PATH:$HOME/bin
+export PATH=/usr/local/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/man:/usr/local/share/man
 
 expand-to-home-or-insert () {
@@ -695,9 +695,11 @@ fi
 export PATH="$HOME/.evm/bin:$PATH"
 
 # go
-#export GOPATH=$HOME
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
+
+# Added by the Heroku Toolbelt
+#export PATH="/usr/local/heroku/bin:$PATH"
 
 ## alias設定
 [ -f ~/.dotfiles/.zsh/.zshrc.alias ] && source ~/.dotfiles/.zsh/.zshrc.alias
@@ -720,3 +722,13 @@ esac
 
 ## local固有設定
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# delete duplicate path
+typeset -T LD_LIBRARY_PATH ld_library_path; typeset -U ld_library_path
+typeset -T LIBRARY_PATH library_path; typeset -U library_path
+typeset -T CPATH cpath; typeset -U cpath
+typeset -U path cdpath fpath manpath
+
+# for profile
+#if (which zprof > /dev/null) ;then
+#      zprof | less

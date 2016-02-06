@@ -543,7 +543,7 @@ let g:user_emmet_settings = {
   \ }}
 
 "------------------------------------
-" emmet-vim.vim
+" nerdtree.vim
 "------------------------------------
 nnoremap <silent><Space>n :NERDTreeToggle<CR>
 " 隠しファイルをデフォルトで表示させる
