@@ -18,3 +18,6 @@ if ! ssh-add -l >& /dev/null ; then
       fi
 
 ssh-add "$HOME/.ssh/prod/id_rsa"
+
+# Homebrew Cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"

@@ -37,7 +37,7 @@
 ;; 行数を表示する
 (require 'linum)
 (global-linum-mode t)      ; デフォルトで linum-mode を有効にする
-;(setq linum-format "%3d ") ; 3 桁分の領域を確保して行番号のあとにスペースを入れる
+(setq linum-format "%3d ") ; 3 桁分の領域を確保して行番号のあとにスペースを入れる
 
 ;; カーソルの点滅をやめる
 (blink-cursor-mode 0)
@@ -54,7 +54,7 @@
 ;     ()))
 ;  "*Face used by hl-line.")
 ;(setq hl-line-face 'hlline-face)
-;(global-hl-line-mode) 
+;(global-hl-line-mode)
 
 ;; 対応する括弧を光らせる
 (show-paren-mode 1)
