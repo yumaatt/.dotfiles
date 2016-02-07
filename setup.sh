@@ -24,7 +24,7 @@ for dotfile in .?*; do
             continue;;
         *)
             #ln -Fis "${PWD}/${dotfile}" $HOME
-            ln -Fs "${HOME}/.dotfiles/${dotfile}" $HOME
+            ln -Ffs "${HOME}/.dotfiles/${dotfile}" $HOME
             ;;
     esac
 done
@@ -34,19 +34,19 @@ if [ ! -f ~/.gitconfig.local ]; then
     echo 'cp .gitconfig.local ~/'
 fi
 
-ln -Fs "${PWD}/bin" $HOME
+ln -Ffs "${PWD}/bin" $HOME
 
 if [ ! -L ~/.oh-my-zsh ]; then
     #ln -Fis "${PWD}/modules/oh-my-zsh" "$HOME/.oh-my-zsh"
-    ln -Fs "${HOME}/.dotfiles/modules/oh-my-zsh" "$HOME/.oh-my-zsh"
+    ln -Ffs "${HOME}/.dotfiles/modules/oh-my-zsh" "$HOME/.oh-my-zsh"
 fi
 
 if [ ! -L ~/.dotfiles ]; then
-    ln -Fs ${PWD} "$HOME/.dotfiles"
+    ln -Ffs ${PWD} "$HOME/.dotfiles"
 fi
 
 if [ ! -L ~/.dotfiles/.vim/bundle/neobundle.vim ]; then
-    ln -Fs "$HOME/.dotfiles/modules/neobundle.vim" "$HOME/.dotfiles/.vim/bundle/neobundle.vim"
+    ln -Ffs "$HOME/.dotfiles/modules/neobundle.vim" "$HOME/.dotfiles/.vim/bundle/neobundle.vim"
 fi
 
 git submodule init
