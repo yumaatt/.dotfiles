@@ -52,6 +52,6 @@ fi
 git submodule init
 git submodule update
 
-vim -c ':NeoBundleInstall' -c ':q!' -c ':q!'
+#vim -c ':NeoBundleInstall' -c ':q!' -c ':q!'
 
 echo 'please edit ~/.gitconfig.local'
