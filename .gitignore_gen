@@ -11,6 +11,7 @@ cat <<'EOF'
 !.emacs.d/elisp/el-get/.gitkeep
 .emacs.d/elisp/elpa/*
 !.emacs.d/elisp/elpa/.gitkeep
+.emacs.d/elpa/*
 undohist
 .recentf
 ac-comphist.dat
