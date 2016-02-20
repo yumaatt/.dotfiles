@@ -14,6 +14,7 @@ cat <<'EOF'
 .emacs.d/elpa/*
 undohist
 .recentf
+recentf
 ac-comphist.dat
 
 # vim
