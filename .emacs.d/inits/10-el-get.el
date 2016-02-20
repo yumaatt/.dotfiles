@@ -5,7 +5,7 @@
 (el-get-bundle descbinds-anything)
 (el-get-bundle auto-complete)
 (el-get-bundle browse-kill-ring)
-(el-get-bundle flycheck)
+;(el-get-bundle flycheck)
 (el-get-bundle git-gutter)
 (el-get-bundle recentf-ext)
 (el-get-bundle zlc)
