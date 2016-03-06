@@ -113,6 +113,7 @@ alias gst="git log --date=short --max-count=1 --pretty=format:'%Cgreen%h %cd %Cb
 alias gc='git commit'
 alias gci='git commit -a'
 alias '偽ｔ'=git
+alias gan='git add -A -n'
 
 function trygitcmd(){
 if (which git > /dev/null) && (git branch 1>/dev/null 2>/dev/null); then
