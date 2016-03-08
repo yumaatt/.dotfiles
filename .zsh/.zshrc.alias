@@ -100,6 +100,9 @@ alias pon='predict-on'
 alias poff='predict-off'
 alias p='ping -c 4'
 
+# ssh
+alias sal='ssh-add -l'
+
 #alias ls='ls -al'
 alias cp='nocorrect cp -irp'
 alias refe='nocorrect refe'
