@@ -41,8 +41,11 @@ alias -g EV="| xargs --verbose sh -c 'vim \"\$@\" < /dev/tty'"
 alias nvim='vim -N -u NONE -i NONE'
 
 # emacs
-alias e='emacs -l ~/.emacs.d/init.el'
+#alias e='emacs -l ~/.emacs.d/init.el'
 alias eq='emacs -q'
+alias ekill='emacsclient -e "(kill-emacs)"'
+alias e='emacsclient -nw -a ""'
+alias emacs='emacsclient -nw -a ""'
 
 # rails
 alias -g RET="RAILS_ENV=test"
