@@ -32,6 +32,7 @@
 (el-get-bundle yascroll)
 (el-get-bundle magit)
 (el-get-bundle smart-newline)
+(el-get-bundle ddskk)
 ;(el-get-bundle helm)
 ;(el-get-bundle helm-open-github)
 ;(el-get-bundle powerline)

@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((emacs-async :checksum "22de0f5792c9140f1da7c7459f30da0863b07e78")
+      '((ddskk :checksum "fa713612fbf12a599b20f31e0aa6f35931bc92a0")
+        (emacs-async :checksum "22de0f5792c9140f1da7c7459f30da0863b07e78")
         (with-editor :checksum "580f225a6c4476feb36b707c6c705b027339717b")
         (flycheck :checksum "f2207c1ec455d75bd06458cf0f6af3b3b40c7ad7")
         (smart-newline :checksum "f5f5ff033645aea0652aa375b034746754a38b1e")
