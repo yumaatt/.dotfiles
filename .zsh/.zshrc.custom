@@ -733,3 +733,5 @@ typeset -U path cdpath fpath manpath
 # for profile
 #if (which zprof > /dev/null) ;then
 #      zprof | less
+
+bindkey "^u" backward-kill-line
