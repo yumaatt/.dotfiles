@@ -78,7 +78,7 @@ alias 'mn'='make native-code'
 alias 'mc'='make clean'
 
 # screen
-alias s='screen -U'
+#alias s='screen -U'
 alias sc='screen -S main'
 alias sn='screen'
 alias sl='screen -ls'
@@ -120,6 +120,10 @@ alias gc='git commit'
 alias gci='git commit -a'
 alias '偽ｔ'=git
 alias gan='git add -A -n'
+alias s='git branch; git status'
+alias gcm='git commit -m'
+alias gps='git push origin master'
+alias gpl='git pull origin master'
 
 function trygitcmd(){
 if (which git > /dev/null) && (git branch 1>/dev/null 2>/dev/null); then
