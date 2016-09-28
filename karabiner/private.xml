@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<root>
+    <appdef>
+        <appname>SLACK</appname>
+        <equal>com.tinyspeck.slackmacgap</equal>
+    </appdef>
+
+    <item>
+        <name>Custom</name>
+
+        <item>
+            <name>Command_R to Return</name>
+            <identifier>private.Command_R_to_Return</identifier>
+            <not>SLACK</not>
+            <autogen>
+                __KeyToKey__
+                KeyCode::COMMAND_R,
+                KeyCode::RETURN
+            </autogen>
+        </item>
+
+        <item>
+            <name>Terminal</name>
+            <item>
+                <name>Change Control+Tab to F12</name>
+                <only>TERMINAL</only>
+                <identifier>private.app.terminal.Control_Tab_to_F12</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE,
+                    KeyCode::F12
+                </autogen>
+            </item>
+            <item>
+                <name>Change Control+Shift+Tab to F11</name>
+                <only>TERMINAL</only>
+                <identifier>private.app.terminal.Control_Shift_Tab_to _F11</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                    KeyCode::F11
+                </autogen>
+            </item>
+        </item>
+
+
+        <item>
+            <name>Slack</name>
+            <item>
+                <name>Enter to new line</name>
+                <identifier>private.app.slack.Enter_to_new_line</identifier>
+                <only>SLACK</only>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::COMMAND_R,
+                    KeyCode::RETURN, ModifierFlag::SHIFT_L
+                </autogen>
+            </item>
+            <item>
+                <name>Command+N to move next channel, Command+P to move previous channel</name>
+                <identifier>private.app.slack.Command_NORP_to_move_channel</identifier>
+                <only>SLACK</only>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::N, ModifierFlag::CONTROL_L,
+                    KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L
+                </autogen>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::P, ModifierFlag::CONTROL_L,
+                    KeyCode::CURSOR_UP, ModifierFlag::OPTION_L
+                </autogen>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::N, ModifierFlag::CONTROL_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                    KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::P, ModifierFlag::CONTROL_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                    KeyCode::CURSOR_UP, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+                </autogen>
+            </item>
+        </item>
+    </item>
+</root>
