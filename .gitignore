@@ -83,5 +83,5 @@ ac-comphist.dat
 !.vim/bundle/.gitkeep
 
 # tmux
-.tmux/plugin/
-.tmux/ressurect/
+.tmux/plugins/
+.tmux/resurrect/
