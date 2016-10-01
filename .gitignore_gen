@@ -20,4 +20,8 @@ ac-comphist.dat
 # vim
 .vim/bundle/*
 !.vim/bundle/.gitkeep
+
+# tmux
+.tmux/plugin/
+.tmux/ressurect/
 EOF

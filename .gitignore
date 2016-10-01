@@ -1,4 +1,4 @@
-### https://raw.github.com/github/gitignore/4215c0f78cf6ac52f3b943b7b0904cfc470d032e/Global/Linux.gitignore
+### https://raw.github.com/github/gitignore/7e04a3f05c5b913b5767ca88fc61734494ca97e2/Global/Linux.gitignore
 
 *~
 
@@ -12,7 +12,7 @@
 .Trash-*
 
 
-### https://raw.github.com/github/gitignore/4215c0f78cf6ac52f3b943b7b0904cfc470d032e/Global/Emacs.gitignore
+### https://raw.github.com/github/gitignore/7e04a3f05c5b913b5767ca88fc61734494ca97e2/Global/Emacs.gitignore
 
 # -*- mode: gitignore; -*-
 *~
@@ -47,13 +47,20 @@ tramp
 # cask packages
 .cask/
 
+# server auth directory
+/server/
 
-### https://raw.github.com/github/gitignore/4215c0f78cf6ac52f3b943b7b0904cfc470d032e/Global/Vim.gitignore
 
+### https://raw.github.com/github/gitignore/7e04a3f05c5b913b5767ca88fc61734494ca97e2/Global/Vim.gitignore
+
+# swap
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
+# persistent undo 
 *.un~
+# session
 Session.vim
+# temporary
 .netrwhist
 *~
 
@@ -74,3 +81,7 @@ ac-comphist.dat
 # vim
 .vim/bundle/*
 !.vim/bundle/.gitkeep
+
+# tmux
+.tmux/plugin/
+.tmux/ressurect/
