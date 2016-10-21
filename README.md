@@ -16,7 +16,6 @@ git clone https://github.com/yumaatt/dotfiles.git /path/to/dotfiles
 /path/to/dotfiles/setup.sh
 ```
 
-todo
 ```
 open vim and exec :NeoBundleInstall
 emacs --debug-init

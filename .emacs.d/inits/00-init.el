@@ -124,3 +124,10 @@
 
 ; 勝手にインデントしないようにする設定
 ;(electric-indent-mode 0)
+
+;; avoid "Symbolic link to Git-controlled source file; follow link? (yes or no)"
+(setq vc-follow-symlinks t)
+
+;;; 複数行移動
+(global-set-key "\M-n" (kbd "C-u 5 C-n"))
+(global-set-key "\M-p" (kbd "C-u 5 C-p"))

@@ -34,7 +34,9 @@ if [ ! -f ~/.gitconfig.local ]; then
     echo 'cp .gitconfig.local ~/'
 fi
 
-ln -Ffs "${PWD}/bin" $HOME
+if [ ! -L ~/bin ]; then
+    ln -Ffs "${PWD}/bin" $HOME
+fi
 
 if [ ! -L ~/.oh-my-zsh ]; then
     #ln -Fis "${PWD}/modules/oh-my-zsh" "$HOME/.oh-my-zsh"

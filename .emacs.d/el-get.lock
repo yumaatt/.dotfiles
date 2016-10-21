@@ -1,5 +1,11 @@
 (setq el-get-lock-package-versions
-      '((ddskk :checksum "fa713612fbf12a599b20f31e0aa6f35931bc92a0")
+      '((owdriver :checksum "0479389d9df9e70ff9ce69dff06252d3aa40fc86")
+        (yaxception :checksum "4e94cf3e0b9b5631b0e90eb4b7de597ee7185875")
+        (log4e :checksum "6592682ab7de0e3d1915aa4d3c53e083be79fbeb")
+        (anything-config :checksum "e3edc9b406a8faca3d4a5527c9bd8aa66aba5a96")
+        (git-gutter-fringe :checksum "dbcaaba83a5fc3e23a735e871e8f31068b92228a")
+        (fringe-helper :checksum "ef4a9c023bae18ec1ddd7265f1f2d6d2e775efdd")
+        (ddskk :checksum "fa713612fbf12a599b20f31e0aa6f35931bc92a0")
         (emacs-async :checksum "22de0f5792c9140f1da7c7459f30da0863b07e78")
         (with-editor :checksum "580f225a6c4476feb36b707c6c705b027339717b")
         (flycheck :checksum "f2207c1ec455d75bd06458cf0f6af3b3b40c7ad7")

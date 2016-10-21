@@ -34,25 +34,89 @@
             <item>
                 <name>Change Control+Shift+Tab to F11</name>
                 <only>TERMINAL</only>
-                <identifier>private.app.terminal.Control_Shift_Tab_to _F11</identifier>
+                <identifier>private.app.terminal.Control_Shift_Tab_to_F11</identifier>
                 <autogen>
                     __KeyToKey__
                     KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
                     KeyCode::F11
                 </autogen>
             </item>
+            <item>
+                <name>Change Control+; to F10</name>
+                <only>TERMINAL</only>
+                <identifier>private.app.terminal.Control_Semicolon_to_F10</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE,
+                    KeyCode::F10
+                </autogen>
+            </item>
+            <item>
+                <name>Change Control+: to F9</name>
+                <only>TERMINAL</only>
+                <identifier>private.app.terminal.Control_Shift_Semicolon_to_F9</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                    KeyCode::F9
+                </autogen>
+            </item>
+            <item>
+                <name>Change Control+Option+; to F8</name>
+                <only>TERMINAL</only>
+                <identifier>private.app.terminal.Control_Option_Semicolon_to_F8</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+                    KeyCode::F8
+                </autogen>
+            </item>
+            <item>
+                <name>Change Control+Shift+2 to F7</name>
+                <only>TERMINAL</only>
+                <identifier>private.app.terminal.Control_Shift_2_to_F7</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE,
+                    KeyCode::F7
+                </autogen>
+            </item>
+            <item>
+                <name>Change Control+Shift+Option+2 to F5</name>
+                <only>TERMINAL</only>
+                <identifier>private.app.terminal.Control_Shift_Option_2_to_F5</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+                    KeyCode::F5
+                </autogen>
+            </item>
         </item>
-
 
         <item>
             <name>Slack</name>
             <item>
-                <name>Enter to new line</name>
+                <name>Enter to new line and Command+Enter to send messages</name>
                 <identifier>private.app.slack.Enter_to_new_line</identifier>
                 <only>SLACK</only>
                 <autogen>
                     __KeyToKey__
+                    KeyCode::COMMAND_R, ModifierFlag::COMMAND_L,
+                    KeyCode::RETURN
+                </autogen>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::COMMAND_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                    KeyCode::RETURN, ModifierFlag::COMMAND_L
+                </autogen>
+                <autogen>
+                    __KeyToKey__
                     KeyCode::COMMAND_R,
+                    KeyCode::RETURN, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
                     KeyCode::RETURN, ModifierFlag::SHIFT_L
                 </autogen>
             </item>
@@ -62,22 +126,27 @@
                 <only>SLACK</only>
                 <autogen>
                     __KeyToKey__
-                    KeyCode::N, ModifierFlag::CONTROL_L,
+                    KeyCode::N, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
                     KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L
                 </autogen>
                 <autogen>
                     __KeyToKey__
-                    KeyCode::P, ModifierFlag::CONTROL_L,
+                    KeyCode::P, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
                     KeyCode::CURSOR_UP, ModifierFlag::OPTION_L
                 </autogen>
+            </item>
+            <item>
+                <name>Option+N to move next unread channel, Option+P to move previous unread channel</name>
+                <identifier>private.app.slack.Option_NORP_to_move_unread_channel</identifier>
+                <only>SLACK</only>
                 <autogen>
                     __KeyToKey__
-                    KeyCode::N, ModifierFlag::CONTROL_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                    KeyCode::N, ModifierFlag::OPTION_R | ModifierFlag::NONE,
                     KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
                 </autogen>
                 <autogen>
                     __KeyToKey__
-                    KeyCode::P, ModifierFlag::CONTROL_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                    KeyCode::P, ModifierFlag::OPTION_R | ModifierFlag::NONE,
                     KeyCode::CURSOR_UP, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
                 </autogen>
             </item>

@@ -7,6 +7,8 @@
   <key>ProgramArguments</key>
   <array>
     <string>/Users/yuma.takahashi/.anyenv/envs/rbenv/shims/google-ime-skk</string>
+    <string>-c</string>
+    <string>3</string>
   </array>
   <key>OnDemand</key>
   <false/>

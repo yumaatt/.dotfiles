@@ -50,3 +50,6 @@ let goroot = substitute(system("go env GOROOT"),  '\n$',  '',  '')
 
 " ファイルタイプ判定をon
 filetype plugin on
+
+" for mac crontab
+set backupskip=/tmp/*,/private/tmp/*

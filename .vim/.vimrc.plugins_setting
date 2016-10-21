@@ -669,3 +669,62 @@ nnoremap <C-]> g<C-]>
 "------------------------------------
 "let g:auto_ctags = 1
 
+"------------------------------------
+" eskk.vim
+"------------------------------------
+" smartinputのマッピングを上書く
+autocmd VimEnter * imap <C-j> <Plug>(eskk:toggle)
+autocmd VimEnter * cmap <C-j> <Plug>(eskk:toggle)
+
+" let g:eskk#directory = "~/.eskk"
+" let g:eskk#auto_save_dictionary_at_exit = 1
+
+if has('vim_starting')
+    " ユーザ辞書
+    let g:eskk#dictionary = {
+    \  'path': "~/.skk/.skk-jisyo",
+    \  'sorted': 0,
+    \  'encoding': 'utf-8',
+    \}
+    
+    if has('mac')
+        " システム辞書
+        let g:eskk#large_dictionary = {
+        \  'path': "~/Library/Application\ Support/AquaSKK/SKK-JISYO.L",
+        \  'sorted': 1,
+        \  'encoding': 'euc-jp',
+        \}        
+    elseif has('win32') || has('win64')
+        " システム辞書
+        let g:eskk#large_dictionary = {
+        \  'path': "~/.skk/SKK-JISYO.L",
+        \  'sorted': 1,
+        \  'encoding': 'euc-jp',
+        \}
+    else
+        " システム辞書
+        let g:eskk#large_dictionary = {
+        \  'path': "~/.skk/SKK-JISYO.L",
+        \  'sorted': 1,
+        \  'encoding': 'euc-jp',
+        \}
+    endif
+endif
+
+" ascii: ivory4:#8b8b83, gray:#bebebe
+" hira: coral4:#8b3e2f, pink:#ffc0cb
+" kata: forestgreen:#228b22, green:#00ff00
+" abbrev: royalblue:#4169e1
+" zenei: gold:#ffd700
+let g:eskk#cursor_color = {
+\  'ascii': ['#8b8b83', '#bebebe'],
+\  'hira': ['#8b3e2f', '#ffc0cb'],
+\  'kata': ['#228b22', '#00ff00'],
+\  'abbrev': '#4169e1',
+\  'zenei': '#ffd700',
+\}
+
+let g:eskk_debug = 0
+let g:eskk_egg_like_newline = 1
+let g:eskk_revert_henkan_style = "okuri"
+let g:eskk_enable_completion = 0

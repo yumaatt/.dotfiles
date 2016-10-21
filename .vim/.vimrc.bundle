@@ -23,6 +23,8 @@ NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'choplin/unite-vim_hacks'
 NeoBundle 'Shougo/neomru.vim'
 
+NeoBundle 'tyru/eskk.vim'
+
 " vimproc
 NeoBundle 'Shougo/vimproc.vim',  {
       \ 'build' : {
