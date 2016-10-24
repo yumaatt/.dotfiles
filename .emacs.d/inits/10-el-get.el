@@ -28,7 +28,7 @@
 (el-get-bundle exec-path-from-shell)
 (el-get-bundle move-text)
 (el-get-bundle volatile-highlights)
-(el-get-bundle hlinum)
+;(el-get-bundle hlinum)
 (el-get-bundle smooth-scroll)
 (el-get-bundle yascroll)
 (el-get-bundle magit)

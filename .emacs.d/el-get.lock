@@ -22,7 +22,6 @@
         (markdown-mode :checksum "1b21b1fa333d9384942aa74b0ad0fea8c701dee3")
         (yascroll :checksum "f7743df1cf6d8e55607141d1ea5f50b562582c51")
         (smooth-scroll :checksum "db1e2a5372c91c973d5d3579898c657fb865f556")
-        (hlinum :checksum "fc6a2fd6bafbf64a9898476244d3bd75f749f39a")
         (linum-ex :checksum "1e0a6c7e363e8295eff4a981bc42b5656c1ca401")
         (volatile-highlights :checksum "fb2abc2d4d4051a9a6b7c8de2fe7564161f01f24")
         (move-text :checksum "5eb25f528b7600d693aeae56b25aad2f8aa0fd2b")
