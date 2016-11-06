@@ -1,0 +1,4 @@
+(:name emacs-rotate
+       :description "emacs-rotate"
+       :type github
+       :pkgname "daichirata/emacs-rotate")
