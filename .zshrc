@@ -57,7 +57,8 @@ plugins=(git)
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
+# comment out because I don't want to setopt share_history
+# source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source $HOME/.dotfiles/.zsh/.zshrc.custom

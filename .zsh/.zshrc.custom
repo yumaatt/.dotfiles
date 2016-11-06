@@ -738,7 +738,18 @@ bindkey "^u" backward-kill-line
 
 setopt globdots # 明確なドットの指定なしで.から始まるファイルをマッチ
 
+# 補完リストが多いときに尋ねる
+LISTMAX=10000
+# LISTMAX=-1 # どんなに多くても表示
+# LISTMAX=0 # ウィンドウから溢れるときは尋ねる
+# なるべくコンパクトに補完リストを表示
+setopt listpacked
+# 補完候補をハイライトする
+autoload -U compinit
+compinit
+zstyle ':completion:*:default' menu select=2
 # 補完時にhjklで選択
+zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'k' vi-up-line-or-history
