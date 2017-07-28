@@ -33,6 +33,7 @@
 (el-get-bundle ddskk)
 (el-get-bundle owdriver)
 (el-get-bundle daichirata/emacs-rotate)
+;(el-get-bundle bind-key)
 ;(el-get-bundle helm)
 ;(el-get-bundle helm-open-github)
 ;(el-get-bundle powerline)
