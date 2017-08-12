@@ -26,6 +26,9 @@ alias duh="du -h ./ --max-depth=1"
 # su
 alias su="su -l"
 
+# sudo
+alias sudoa="sudo "
+
 # history
 # unalias history
 alias h="history 1"
