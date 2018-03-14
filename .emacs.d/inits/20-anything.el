@@ -41,7 +41,7 @@
 ;; anything-exuberant-ctags.el
 
 ; anything-custom-filelist
-(defun chomp (str)
+(defun chomp_for_anything (str)
   (replace-regexp-in-string "[\n\r]+$" "" str))
 
 (defun anything-git-project-is-git-repository ()
@@ -52,7 +52,7 @@
     ))
 
 (defun anything-git-project-project-dir ()
-  (chomp
+  (chomp_for_anything
    (shell-command-to-string "git rev-parse --show-toplevel")
    ))
 
