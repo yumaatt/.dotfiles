@@ -127,7 +127,7 @@
 (setq mode-require-final-newline t)
 
 ; 勝手にインデントしないようにする設定
-;(electric-indent-mode 0)
+(electric-indent-mode 0)
 
 ;; avoid "Symbolic link to Git-controlled source file; follow link? (yes or no)"
 (setq vc-follow-symlinks t)
