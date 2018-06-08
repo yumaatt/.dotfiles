@@ -1,11 +1,11 @@
-(require 'skk-autoloads)
+;(require 'skk-autoloads)
 ;; SKKモードに移行するキーバインドの設定
 ;(global-set-key "\C-xj" 'skk-mode)
-(global-set-key "\C-j" 'skk-mode)
+;(global-set-key "\C-j" 'skk-mode)
 ;; SKKのチュートリアル
-(global-set-key "\C-xt"'skk-tutorial)
+;(global-set-key "\C-xt"'skk-tutorial)
 ; use azik
-(setq skk-use-azik t)
+;(setq skk-use-azik t)
 
 ;; 辞書
 ;(setq skk-large-jisyo "~/Library/Application Support/AquaSKK/SKK-JISYO.L") ; 一応

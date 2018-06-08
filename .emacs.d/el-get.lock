@@ -1,5 +1,7 @@
 (setq el-get-lock-package-versions
-      '((emacs-rotate :checksum "091b5ac4fc310773253efb317e3dbe8e46959ba6")
+      '((magit-popup :checksum "60ff82ac7aa8dbc24eb3c34dbed13ad01f20671c")
+        (ghub :checksum "4831933da059ee084a16016558b9ccd8c581a8ff")
+        (emacs-rotate :checksum "091b5ac4fc310773253efb317e3dbe8e46959ba6")
         (dired+ :checksum "c9c403d034f4ff478206bd0f51dc8d94014833bd")
         (owdriver :checksum "0479389d9df9e70ff9ce69dff06252d3aa40fc86")
         (yaxception :checksum "4e94cf3e0b9b5631b0e90eb4b7de597ee7185875")
@@ -7,7 +9,6 @@
         (anything-config :checksum "e3edc9b406a8faca3d4a5527c9bd8aa66aba5a96")
         (git-gutter-fringe :checksum "dbcaaba83a5fc3e23a735e871e8f31068b92228a")
         (fringe-helper :checksum "ef4a9c023bae18ec1ddd7265f1f2d6d2e775efdd")
-        (ddskk :checksum "fa713612fbf12a599b20f31e0aa6f35931bc92a0")
         (emacs-async :checksum "22de0f5792c9140f1da7c7459f30da0863b07e78")
         (with-editor :checksum "580f225a6c4476feb36b707c6c705b027339717b")
         (flycheck :checksum "f2207c1ec455d75bd06458cf0f6af3b3b40c7ad7")
