@@ -397,6 +397,8 @@ cnoremap UO Unite outline<Enter>
 "             \ 'active_filetypes': ['ruby'] }
 " let g:syntastic_ruby_checkers = ['rubocop']
 "
+let g:syntastic_cpp_compiler="gcc"
+let g:syntastic_cpp_compiler_options=" -std=c++14"
 "
 " "------------------------------------
 " " toggle.vim
