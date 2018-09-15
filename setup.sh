@@ -22,6 +22,8 @@ for dotfile in .?*; do
             continue;;
         .zsh)
             continue;;
+        .bashrc)
+            continue;;
         *)
             #ln -Fis "${PWD}/${dotfile}" $HOME
             ln -Ffs "${HOME}/.dotfiles/${dotfile}" $HOME
@@ -34,9 +36,9 @@ if [ ! -f ~/.gitconfig.local ]; then
     echo 'cp .gitconfig.local ~/'
 fi
 
-if [ ! -L ~/bin ]; then
-    ln -Ffs "${PWD}/bin" $HOME
-fi
+#if [ ! -L ~/bin ]; then
+#    ln -Ffs "${PWD}/bin" $HOME
+#fi
 
 if [ ! -L ~/.oh-my-zsh ]; then
     #ln -Fis "${PWD}/modules/oh-my-zsh" "$HOME/.oh-my-zsh"
