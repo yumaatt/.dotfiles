@@ -10,6 +10,9 @@ alias lu='ls -ltur'        # Sort by and show access time, most recent last
 alias lt='ls -ltr'         # Sort by date, most recent last
 alias lr='ls -lR'          # Recursive ls
 
+alias sshadd1="ssh-add -D; ssh-add ~/.ssh/id_rsa"
+alias sshadd2="ssh-add -D; ssh-add ~/.ssh/id_rsa_mac2"
+
 # mv
 alias mv="mv -i"
 

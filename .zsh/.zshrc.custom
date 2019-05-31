@@ -496,6 +496,8 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/snap/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/man:/usr/local/share/man
 
+export PATH=$PATH:~/.dotfiles/bin
+
 expand-to-home-or-insert () {
         if [ "$LBUFFER" = "" -o "$LBUFFER[-1]" = " " ]; then
                 LBUFFER+="~/"

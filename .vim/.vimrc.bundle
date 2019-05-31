@@ -41,7 +41,7 @@ NeoBundle 'Shougo/vimproc.vim',  {
 " NeoBundle 'AutoComplPop'
 
 " 補完 neocomplcache.vim : 究極のVim的補完環境
-NeoBundle 'Shougo/neocomplcache'
+"NeoBundle 'Shougo/neocomplcache'
 
 " neocomplcacheのsinpet補完
 " NeoBundle 'Shougo/neosnippet.git'
@@ -385,7 +385,7 @@ NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'elixir-lang/vim-elixir'
 
 " Go (golang) support for Vim (enhanced bundled vim)
-NeoBundle 'fatih/vim-go'
+" NeoBundle 'fatih/vim-go'
 
 "}}}
 "
