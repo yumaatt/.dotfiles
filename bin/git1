@@ -1,0 +1,4 @@
+ssh-add -D;
+ssh-add ~/.ssh/id_rsa
+rm -f ~/.gitconfig.local
+cp -p ~/.gitconfig.local.git1 ~/.gitconfig.local
