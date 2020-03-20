@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((treepy :checksum "b40e6b09eb9be45da67b8c9e4990a5a0d7a2a09d")
+      '((transient :checksum "8bfa489644ba5c287f1775b317a5755a3f232e48")
+        (treepy :checksum "b40e6b09eb9be45da67b8c9e4990a5a0d7a2a09d")
         (graphql :checksum "e2b309689f4faf9225f290080f836e988c5a576d")
         (magit-popup :checksum "60ff82ac7aa8dbc24eb3c34dbed13ad01f20671c")
         (ghub :checksum "4831933da059ee084a16016558b9ccd8c581a8ff")
