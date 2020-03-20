@@ -131,6 +131,9 @@ alias b='git branch'
 alias gcm='git commit -m'
 alias gps='git push origin master'
 alias gpl='git pull origin master'
+alias gph='git push heroku master'
+alias gpsh='git push origin master; git push heroku master'
+funciton fgp (){ git add -A; git commit -m $@; git push origin master }
 
 function trygitcmd(){
 if (which git > /dev/null) && (git branch 1>/dev/null 2>/dev/null); then

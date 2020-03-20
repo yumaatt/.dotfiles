@@ -759,3 +759,9 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 
 bindkey "^[[Z" reverse-menu-complete  # Shift-Tabで補完候補を逆順する("\e[Z"でも動作する)
+
+# tfenv
+export PATH="$HOME/.tfenv/bin:$PATH"
+
+# direnv
+eval "$(direnv hook zsh)"
