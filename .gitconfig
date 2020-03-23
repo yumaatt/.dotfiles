@@ -273,4 +273,4 @@
 
 [ghq]
   root = ~/.ghq
-  root = ~/.go/src
+#  root = ~/go/1.14.1/src
