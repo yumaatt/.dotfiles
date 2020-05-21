@@ -695,11 +695,24 @@ if [ -d ${HOME}/.anyenv ] ; then
     done
 fi
 
+# goenv
+# because goenv version in anyenv is not 2.0.0
+case "${OSTYPE}" in
+# MacOSX
+darwin*)
+    ;;
+# Linux
+linux*)
+    export GOENV_ROOT="$HOME/.goenv"
+    export PATH="$GOENV_ROOT/bin:$PATH"
+    eval "$(goenv init -)"
+    ;;
+esac
+
 # evm
 export PATH="$HOME/.evm/bin:$PATH"
 
 # go
-#export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
 # Added by the Heroku Toolbelt
