@@ -778,3 +778,24 @@ export PATH="$HOME/.tfenv/bin:$PATH"
 
 # direnv
 eval "$(direnv hook zsh)"
+
+function aws-load-profile(){
+    if [ ! -z "${1+UNDEF}" ]; then
+      option1=$1
+    fi
+    if [ "${option1}" = "-h" ]; then
+        echo "USAGES:"
+        echo "  aws-load-profile [PROFILE NAME]"
+        return 0
+    fi
+    if [ "${option1}" = "help" ]; then
+        echo "USAGES:"
+        echo "  aws-load-profile [PROFILE NAME]"
+        return 0
+    fi
+    profile_name=${option1}
+    export AWS_SECRET_ACCESS_KEY=$(grep -A 10 "\[${profile_name}\]"  ~/.aws/credentials | grep aws_secret_access_key | head -1 | awk -F '=' '{print $2}' | tr -d ' ')
+    export AWS_ACCESS_KEY_ID=$(grep -A 10 "\[${profile_name}\]"  ~/.aws/credentials | grep aws_access_key_id | head -1 | awk -F '=' '{print $2}' | tr -d ' ')
+    export X_AWS_SESSION_NAME=${profile_name}
+}
+alias alp='aws-load-profile'

@@ -157,7 +157,7 @@ alias ci='trygitcmd commit'
 alias cim='trygitcmd commit -m'
 alias push='trygitcmd push'
 alias pull='trygitcmd pull'
-alias tr="git log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'"
+#alias tr="git log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'"
 
 # dstat
 alias dstat-full='dstat -Tclmdrn'

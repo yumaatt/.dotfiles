@@ -3,5 +3,9 @@
         "M-v": "peco.SelectPreviousPage",
         "C-v": "peco.SelectNextPage",
         "C-g": "peco.Cancel"
+    },
+    "Style": {
+        "Selected": ["underline", "on_white", "black"],
+        "Matched": ["red", "on_black"]
     }
 }
