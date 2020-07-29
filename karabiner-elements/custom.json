@@ -508,7 +508,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "v",
+            "key_code": "c",
             "modifiers": {
               "mandatory": [
                 "option"
@@ -517,7 +517,7 @@
           },
           "to": [
             {
-              "key_code": "v",
+              "key_code": "c",
               "modifiers": [
                 "left_command",
                 "left_control",
