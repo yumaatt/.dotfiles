@@ -69,6 +69,43 @@
                 "shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Terminal$",
+                "^com\\.googlecode\\.iterm2$",
+                "^co\\.zeit\\.hyperterm$",
+                "^co\\.zeit\\.hyper$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[All] Eisuu-Ctrl-Tab to Shift+Ctrl+Enter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "japanese_eisuu"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "control",
+                "shift"
+              ]
+            }
           ]
         }
       ]
@@ -107,7 +144,7 @@
       ]
     },
     {
-      "description": "[Terminal] Ctrl+Tab to F12 and Ctrl+Shift+Tab to F11",
+      "description": "[Terminal] Ctrl+Tab to F12 and Ctrl+Command+Tab to F11",
       "manipulators": [
         {
           "type": "basic",
@@ -143,7 +180,7 @@
             "modifiers": {
               "mandatory": [
                 "control",
-                "shift"
+                "left_command"
               ]
             }
           },
