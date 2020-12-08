@@ -2,6 +2,27 @@
   "title": "Custom Rules",
   "rules": [
     {
+      "description": "[All] Ctrl-J to Enter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "[Terminal] AquaSKK Ctrl-J to Kana",
       "manipulators": [
         {
