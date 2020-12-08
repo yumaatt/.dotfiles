@@ -549,7 +549,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "r",
             "modifiers": {
               "mandatory": [
                 "option"
@@ -558,7 +558,7 @@
           },
           "to": [
             {
-              "key_code": "t",
+              "key_code": "r",
               "modifiers": [
                 "left_command",
                 "left_control",
