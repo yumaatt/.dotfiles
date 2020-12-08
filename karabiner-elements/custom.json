@@ -85,32 +85,6 @@
       ]
     },
     {
-      "description": "[All] Eisuu-Ctrl-Tab to Shift+Ctrl+Enter",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "tab",
-            "modifiers": {
-              "mandatory": [
-                "control",
-                "japanese_eisuu"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "control",
-                "shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "[Terminal] AquaSKK Ctrl-J to Kana",
       "manipulators": [
         {
