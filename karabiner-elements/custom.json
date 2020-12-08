@@ -48,7 +48,111 @@
       ]
     },
     {
-      "description": "[All] Command-Ctrl-Tab to Shift+Ctrl+Enter",
+      "description": "[All] Command-Ctrl-N to Shift+Ctrl+N",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "control",
+                "shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[All] Command-Ctrl-P to Shift+Ctrl+P",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "control",
+                "shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[All] Command-Ctrl-F to Shift+Ctrl+F",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "control",
+                "shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[All] Command-Ctrl-B to Shift+Ctrl+B",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "control",
+                "shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[All] Command-Ctrl-Tab to Shift+Ctrl+Tab",
       "manipulators": [
         {
           "type": "basic",
