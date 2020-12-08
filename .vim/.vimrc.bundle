@@ -9,6 +9,8 @@ call neobundle#begin(expand('~/.dotfiles/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'hashivim/vim-terraform'
+
 " My Bundles here:
 " http://qiita.com/okamos/items/caf5a0b19ce893a75363
 " Unite

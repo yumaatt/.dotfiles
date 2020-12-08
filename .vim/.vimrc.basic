@@ -53,3 +53,8 @@ filetype plugin on
 
 " for mac crontab
 set backupskip=/tmp/*,/private/tmp/*
+
+"autocmd BufWritePre *.tf sed -i '' '${/^$/d;}' <afile>
+"autocmd BufWritePre *.tf !sed -i '' '${/^$/d;}' expand("%:p")
+"autocmd BufWritePre *.tf !sed -i '' '${/^$/d;}' "%:p"
+autocmd BufWritePre *.tf %s#\($\n\s*\)\+\%$##e
