@@ -2,7 +2,7 @@
   "title": "Custom Rules",
   "rules": [
     {
-      "description": "[All] Ctrl-J to Enter",
+      "description": "[All] Ctrl-J to Enter and Ctrl-Shift-J to Shift+Enter",
       "manipulators": [
         {
           "type": "basic",
@@ -17,6 +17,26 @@
           "to": [
             {
               "key_code": "return_or_enter"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "shift"
+              ]
             }
           ]
         }
